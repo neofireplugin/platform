@@ -113,6 +113,7 @@ To get the diff between two versions, go to https://github.com/shopware/platform
         * Replace `setUserData` to `getUserData`
         * `saveFinish` is now an asynchronous method
      
+    * To make the headers of a column in the `sw-data-grid` translatable you have to specify only the path to the snippet. `this.$tc('path.to.snippet')` will still work. 
 
 * Core    
 	* We did some refactoring on how we use `WriteConstraintsViolationExceptions`.	
