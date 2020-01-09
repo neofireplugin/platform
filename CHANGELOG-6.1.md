@@ -121,8 +121,6 @@ To get the diff between two versions, go to https://github.com/shopware/platform
         * `saveFinish` is now an asynchronous method
     * Fix `sw-multi-ip-select` value property if it is undefined
     * Removed property type check for value property of `sw-multi-select` and `sw-multi-ip-select` because the value is already checked in a custom validator function
-     
-
     * Fixed the inheritance reset for the price field in the variant listing.
     * Fixed product name column in product review listing
 * Core    
@@ -329,6 +327,7 @@ To get the diff between two versions, go to https://github.com/shopware/platform
     * Added new field `navigation_category_depth` to `\Shopware\Core\System\SalesChannel\SalesChannelDefinition` 
     * Changed `MailService` to add `bcc` instead `to` for `deliveryAddress`
     * We added the `Inherited` flag to the `listingPrices` property of the `\Shopware\Core\Content\Product\ProductDefinition`
+    * The `\Shopware\Storefront\Page\Product\Review\ProductReviewLoader::load` returns now the reviews of all variants.
 * Storefront
     * Changed `\Shopware\Storefront\Framework\Cache\CacheWarmer\CacheRouteWarmer` signatures	
     * Moved most of the seo module into the core. Only storefront(route) specific logic/extensions remain	
